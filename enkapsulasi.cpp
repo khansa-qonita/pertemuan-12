@@ -15,3 +15,18 @@ public:
     }
 };
 
+int main() {
+    remoteLampu lampuRumah;
+
+    lampuRumah.setSaklarOn(0, "Lampu Teras Rumah");
+    lampuRumah.setSaklarOn(1, "Lampu Ruang Tamu");
+    lampuRumah.setSaklarOn(2, "Lampu Kamar Tidur");
+    lampuRumah.setSaklarOn(3, "Lampu Dapur");
+
+    cout << lampuRumah.getSaklarOn(0) << endl;
+    cout << lampuRumah.getSaklarOn(1) << endl;
+    cout << lampuRumah.getSaklarOn(2) << endl;
+    cout << lampuRumah.getSaklarOn(3) << endl;
+
+    return 0;
+}
